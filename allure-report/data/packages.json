@@ -1,0 +1,45 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test.JIRATest",
+    "children" : [ {
+      "name" : "createIssue",
+      "uid" : "9ad17fd6e2f9f790",
+      "parentUid" : "3b02fbcbdf603c397632aaf79437ca39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571854153993,
+        "stop" : 1571854181726,
+        "duration" : 27733
+      },
+      "flaky" : true,
+      "parameters" : [ ]
+    }, {
+      "name" : "createIssueTest",
+      "uid" : "173f4f1afe23fbd5",
+      "parentUid" : "3b02fbcbdf603c397632aaf79437ca39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571854181943,
+        "stop" : 1571854186004,
+        "duration" : 4061
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "testToBeSkipped",
+      "uid" : "6e5165eab14781f1",
+      "parentUid" : "3b02fbcbdf603c397632aaf79437ca39",
+      "status" : "passed",
+      "time" : {
+        "start" : 1571854186015,
+        "stop" : 1571854186016,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test.JIRATest"
+  } ]
+}

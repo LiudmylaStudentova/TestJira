@@ -1,0 +1,94 @@
+{
+  "uid" : "f4fa5f0b656b0555",
+  "name" : "testToBeSkipped",
+  "fullName" : "test.JIRATest.testToBeSkipped",
+  "historyId" : "a7a37b8856a15e4d1df332b716fcd478",
+  "time" : {
+    "start" : 1571853659646,
+    "stop" : 1571853659647,
+    "duration" : 1
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ {
+    "name" : "setUp",
+    "time" : {
+      "start" : 1571853587212,
+      "stop" : 1571853595686,
+      "duration" : 8474
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1571853659681,
+      "stop" : 1571853661583,
+      "duration" : 1902
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "test.JIRATest"
+  }, {
+    "name" : "testClass",
+    "value" : "test.JIRATest"
+  }, {
+    "name" : "testMethod",
+    "value" : "testToBeSkipped"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Default Suite"
+  }, {
+    "name" : "suite",
+    "value" : "CreateIssue123"
+  }, {
+    "name" : "subSuite",
+    "value" : "test.JIRATest"
+  }, {
+    "name" : "host",
+    "value" : "asus-x751LN"
+  }, {
+    "name" : "thread",
+    "value" : "13244@asus-x751LN.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "feature",
+    "value" : "Issue"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "f4fa5f0b656b0555.json",
+  "parameterValues" : [ ]
+}

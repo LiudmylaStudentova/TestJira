@@ -1,0 +1,49 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "asus-x751LN",
+    "children" : [ {
+      "name" : "13604@asus-x751LN.main(1)",
+      "children" : [ {
+        "name" : "createIssueTest",
+        "uid" : "173f4f1afe23fbd5",
+        "parentUid" : "5fc4f5ffe2f7789dc1bcfe496df9eccf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571854181943,
+          "stop" : 1571854186004,
+          "duration" : 4061
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "createIssue",
+        "uid" : "9ad17fd6e2f9f790",
+        "parentUid" : "5fc4f5ffe2f7789dc1bcfe496df9eccf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571854153993,
+          "stop" : 1571854181726,
+          "duration" : 27733
+        },
+        "flaky" : true,
+        "parameters" : [ ]
+      }, {
+        "name" : "testToBeSkipped",
+        "uid" : "6e5165eab14781f1",
+        "parentUid" : "5fc4f5ffe2f7789dc1bcfe496df9eccf",
+        "status" : "passed",
+        "time" : {
+          "start" : 1571854186015,
+          "stop" : 1571854186016,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "5fc4f5ffe2f7789dc1bcfe496df9eccf"
+    } ],
+    "uid" : "d50bf4dc27b0a2cf8386cbd5ab3c62b5"
+  } ]
+}
