@@ -5,6 +5,7 @@
 3.Вставляем код
 4.Подклчаем библиотеки, в xml file проекта прописываем <dependency> // это позволит подкачивать всегда новые библиотеки для теста
 
+'''
  <dependencies>
             <dependency>
             <groupId>org.seleniumhq.selenium</groupId>// взаимодействие с браузером
@@ -36,7 +37,7 @@
         </dependency>
 
     </dependencies>
-
+'''
 
     5.Обьявляем java class - это наш тестовый suit, который будет хранить более одного автотеста
     6.Прописываем путь к chromedriver: это позволит браузеру понимать команды с нашего java code(Изначально разещаем в корень проекта)
@@ -53,6 +54,7 @@
 Алгоритм для подключения Allure
 1. обновить pom.xml
 добавить dependency
+'''
   <dependency>
         <groupId>io.qameta.allure</groupId>
          <artifactId>allure-testng</artifactId>
@@ -106,6 +108,7 @@
     </test>
 </suite>
 обновить тест - добавить @Feature
+'''
 2. установить Allure CLI
 https://docs.qameta.io/allure/#_installing_a_commandline
 3. запустить тесты
