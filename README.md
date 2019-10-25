@@ -1,9 +1,10 @@
-####Установка Maven проекта и запуск теста:
-#####1.Создаём проект в IntelliJ Idea
-#####2.Выбираем Maven
-#####3.Вставляем код
-#####4.Подклчаем библиотеки, в xml file проекта прописываем <dependency> // это позволит подкачивать всегда новые библиотеки для теста
-```
+# TestJira
+Установка Maven проекта и запуск теста:
+1.Создаём проект в IntelliJ Idea
+2.Выбираем Maven
+3.Вставляем код
+4.Подклчаем библиотеки, в xml file проекта прописываем <dependency> // это позволит подкачивать всегда новые библиотеки для теста
+
  <dependencies>
             <dependency>
             <groupId>org.seleniumhq.selenium</groupId>// взаимодействие с браузером
@@ -33,31 +34,31 @@
             <version>7.0.0-beta7</version>
             <scope>compile</scope>
         </dependency>
-```
-#####5.Обьявляем java class - это наш тестовый suit, который будет хранить более одного автотеста
-#####6..Прописываем путь к chromedriver: это позволит браузеру понимать команды с нашего java code(Изначально размещаем в корень проекта)
-```
+
+    </dependencies>
+
+
+    5.Обьявляем java class - это наш тестовый suit, который будет хранить более одного автотеста
+    6.Прописываем путь к chromedriver: это позволит браузеру понимать команды с нашего java code(Изначально разещаем в корень проекта)
         public void setUp(){
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
-  
-```
-#####7.Обьявляем java метод @Test -это то, что framework TestNG должен себе положить в память и начать запускать
-#####8.Запускаем тест
+    }
+     6.Обьявляем java метод @Test -это то, что framework TestNG должен себе положить в память и начать запускать
+     7.Запускаем тест
 
-#### Алгоритм для подключения Allure
 
-##### 1. обновить pom.xml
-- добавить dependency
-```
+
+
+Алгоритм для подключения Allure
+1. обновить pom.xml
+добавить dependency
   <dependency>
         <groupId>io.qameta.allure</groupId>
          <artifactId>allure-testng</artifactId>
           <version>2.12.0</version>
   </dependency>
-```
-- добавить plugins		
-```
+добавить plugins
 <build>
     <plugins>
         <plugin>
@@ -90,16 +91,12 @@
         </plugin>
     </plugins>
 </build>
-```
-- добавить properties
-```
+добавить properties
  <properties>
         <aspectj.version>1.8.10</aspectj.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-```
-- добавить TestNG.xml в корень проекта (что бы явно указать какие тесты и как запускать, не параллельно)
-```
+добавить TestNG.xml в корень проекта (что бы явно указать какие тесты и как запускать, не параллельно)
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel test suite" >
     <test name="Issue">
@@ -108,14 +105,14 @@
         </classes>
     </test>
 </suite>
-```
-- обновить тест - добавить @Feature
-##### 2. установить Allure CLI
-```
+обновить тест - добавить @Feature
+2. установить Allure CLI
 https://docs.qameta.io/allure/#_installing_a_commandline
-```
-##### 3. запустить тесты 
-```mvn clean test```
-##### 4. выполнить в корне проекта консольную команду и получить отчет
-    ```allure generate```
-Отчет будет в корне проекта в папке "allure-report" 
+3. запустить тесты
+mvn clean test
+
+4. выполнить в корне проекта консольную команду и получить отчет
+```allure generate```
+Отчет будет в корне проекта в папке "allure-report"
+
+
